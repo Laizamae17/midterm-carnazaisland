@@ -47,3 +47,4 @@ const styles = StyleSheet.create({
   title: { fontSize: 22, fontWeight: "bold", marginBottom: 15 },
   info: { fontSize: 16, marginBottom: 6 },
 });
+//
