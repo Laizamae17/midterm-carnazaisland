@@ -22,13 +22,12 @@ const home = () => {
           ➕ Add a Messages
         </Link>
 
-        <TouchableOpacity
-          style={styles.logoutBtn}
-          onPress={() => router.replace("/login")}
-        >
-          <Ionicons name="log-out" size={20} color="white" />
-          <Text style={styles.logoutText}>Log Out</Text>
-        </TouchableOpacity>
+        <Link href="/profile" asChild>
+          <TouchableOpacity style={styles.card}>
+            <Ionicons name="person-outline" size={28} color="#fff" />
+            <Text style={styles.cardText}>Profile</Text>
+          </TouchableOpacity>
+        </Link>
       </View>
     </View>
   );
@@ -89,6 +88,12 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 4,
     elevation: 3,
+  },
+  cardText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#21cc8d',
+    marginLeft: 10,
   },
   logoutBtn: {
     marginTop: 50,
