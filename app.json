@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my-goals",
-    "slug": "my-goals",
+    "name": "midterm-carnazaisland",
+    "slug": "midterm-carnazaisland",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.laizatomarong.midtermcarnazaisland"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0cbe13b5-2a59-484a-b4ae-8fc1975bf5fd"
+      }
+    },
+    "owner": "laizatomarong"
   }
 }
